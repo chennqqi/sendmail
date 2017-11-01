@@ -2,7 +2,9 @@
 
 	go sendmail command
 
-## usage 
+## usage
+
+	go get github.com/chennqqi/cmd/gomail 
 
 	Usage of cmd:
 	  -body string
