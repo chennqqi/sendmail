@@ -29,7 +29,9 @@ func main() {
 	tos := strings.Split(to, ",")
 	m.SetHeader("To", tos...)
 
-	m.SetAddressHeader("Cc", cc, cc)
+	if cc != "" {
+		m.SetAddressHeader("Cc", cc, cc)
+	}
 	m.SetHeader("Subject", subject)
 	m.SetBody("text/plain", body)
 
